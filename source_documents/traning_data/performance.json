@@ -1,134 +1,162 @@
 [
     {
-        "name": "Start Time (Local)",
-        "definition": "Louisville local time start of calculation period"
+        "input": "Start Time (Local)",
+        "output": "Louisville local time start of calculation period",
+        "instruction": "Indicates the local time when the calculation period starts."
     },
     {
-        "name": "End Time (Local)",
-        "definition": "Louisville local time end of calculation period"
+        "input": "End Time (Local)",
+        "output": "Louisville local time end of calculation period",
+        "instruction": "Indicates the local time when the calculation period ends."
     },
     {
-        "name": "Total Units Put",
-        "definition": "Sum of robot units put and manual scan count"
+        "input": "Total Units Put",
+        "output": "Sum of robot units put and manual scan count",
+        "instruction": "Represents the total count of units put, including both robot units and manual scans."
     },
     {
-        "name": "Robot Units Put",
-        "definition": "Count of units successfully put by robot into the correct compartment, not including exception bin"
+        "input": "Robot Units Put",
+        "output": "Count of units successfully put by robot into the correct compartment, not including exception bin",
+        "instruction": "Tracks the number of units successfully placed by the robot into the correct compartment, excluding the exception bin."
     },
     {
-        "name": "Human Units Put",
-        "definition": "Count of manual scans that result in confirmed puts, including those manual scans that result in confirmed puts that take place during the hold resolution process"
+        "input": "Human Units Put",
+        "output": "Count of manual scans that result in confirmed puts, including those manual scans that result in confirmed puts that take place during the hold resolution process",
+        "instruction": "Records the count of manual scans that result in confirmed puts, including those scans that occur during the hold resolution process."
     },
     {
-        "name": "Total Parcels Completed",
-        "definition": "Count of parcels that were first completed in the time period. It’s important that “completed” means “first completed” so that parcels can not be counted twice in two time periods, even if a manual audit or hold resolution causes us to resend the “parcel complete” message."
+        "input": "Total Parcels Completed",
+        "output": "Count of parcels that were first completed in the time period. It’s important that “completed” means “first completed” so that parcels can not be counted twice in two time periods, even if a manual audit or hold resolution causes us to resend the “parcel complete” message.",
+        "instruction": "Counts the number of parcels that were initially completed within the specified time period, ensuring that each parcel is counted only once."
     },
     {
-        "name": "Total Batches Completed",
-        "definition": "Count of batches completed during the time period."
+        "input": "Total Batches Completed",
+        "output": "Count of batches completed during the time period.",
+        "instruction": "Represents the total count of batches that were completed within the specified time period."
     },
     {
-        "name": "Shorted Parcels",
-        "definition": "Count of parcels first completed during the time period that have at least one shorted unit. Includes both pick short and put short units."
+        "input": "Shorted Parcels",
+        "output": "Count of parcels first completed during the time period that have at least one shorted unit. Includes both pick short and put short units.",
+        "instruction": "Tracks the count of parcels that were initially completed within the time period and contain at least one shorted unit."
     },
     {
-        "name": "Shorted Units",
-        "definition": "In parcels that were first completed during the time period, this is the count of units that were shorted. Includes both pick short and put short units."
+        "input": "Shorted Units",
+        "output": "In parcels that were first completed during the time period, this is the count of units that were shorted. Includes both pick short and put short units.",
+        "instruction": "Represents the total count of units that were shorted within parcels completed in the specified time period."
     },
     {
-        "name": "Manual Scan Count",
-        "definition": "Count of items scanned by hand scanner. This is the correct definition for “human units put”, and should be renamed accordingly."
+        "input": "Manual Scan Count",
+        "output": "Count of items scanned by hand scanner. This is the correct definition for “human units put”, and should be renamed accordingly.",
+        "instruction": "Indicates the count of items scanned using a hand scanner, which is the correct definition for 'human units put'."
     },
     {
-        "name": "Unique Orders",
-        "definition": "Count of unique orders worked on (the same order can be worked in two time periods)"
+        "input": "Unique Orders",
+        "output": "Count of unique orders worked on (the same order can be worked in two time periods)",
+        "instruction": "Tracks the count of unique orders that were worked on, even if they span across multiple time periods."
     },
     {
-        "name": "Robot Active Time",
-        "definition": "Minutes robot is active. “Active” does not include tote swap time or any cycles that end in failure because there are no open cubbies."
+        "input": "Robot Active Time",
+        "output": "Minutes robot is active. “Active” does not include tote swap time or any cycles that end in failure because there are no open cubbies.",
+        "instruction": "Represents the duration in minutes that the robot is actively performing tasks, excluding tote swap time and failed cycles due to unavailable compartments."
     },
     {
-        "name": "Tote Swapping Time",
-        "definition": "Time (in minutes) that the conveyors are active but the robot is not picking. Not valid when there’s no tote."
+        "input": "Tote Swapping Time",
+        "output": "Time (in minutes) that the conveyors are active but the robot is not picking. Not valid when there’s no tote.",
+        "instruction": "Indicates the duration in minutes that the conveyors are active but the robot is not actively picking items. This measurement is not valid when there is no tote present."
     },
     {
-        "name": "Robot Inactive Time Batch Present",
-        "definition": "The elapsed clock time minus robot active time, tote swapping time, “no open compartment” time, and “waiting for batch” time."
+        "input": "Robot Inactive Time Batch Present",
+        "output": "The elapsed clock time minus robot active time, tote swapping time, “no open compartment” time, and “waiting for batch” time.",
+        "instruction": "Represents the time duration, in minutes, during which the robot is inactive due to factors such as no open compartment, waiting for a batch, tote swapping, etc., in the presence of batches."
     },
     {
-        "name": "Waiting for Batch Time",
-        "definition": "Time (in minutes) that robot has no open, assigned, pick-complete batch. This timer does not measure whether the totes are physically at the station."
+        "input": "Waiting for Batch Time",
+        "output": "Time (in minutes) that robot has no open, assigned, pick-complete batch. This timer does not measure whether the totes are physically at the station.",
+        "instruction": "Indicates the duration in minutes during which the robot has no open, assigned, pick-complete batch. Note that this timer does not measure whether the totes are physically present at the station."
     },
     {
-        "name": "No Open Compartment",
-        "definition": "Minutes robot is waiting for a compartment - can be triggered by all compartments being full or by the cardboard carton in the desired compartment being removed."
+        "input": "No Open Compartment",
+        "output": "Minutes robot is waiting for a compartment - can be triggered by all compartments being full or by the cardboard carton in the desired compartment being removed.",
+        "instruction": "Tracks the duration in minutes that the robot is waiting for an available compartment, which can be triggered by all compartments being full or by the removal of the cardboard carton from the desired compartment."
     },
     {
-        "name": "Elapsed Clock Time",
-        "definition": "Period of time (in minutes) that all calculations are being made within."
+        "input": "Elapsed Clock Time",
+        "output": "Period of time (in minutes) that all calculations are being made within.",
+        "instruction": "Represents the total period of time, in minutes, during which all calculations are being performed."
     },
     {
-        "name": "Robot UPH",
-        "definition": "“Robot Units Put” divided by “Robot Active Time”"
+        "input": "Robot UPH",
+        "output": "“Robot Units Put” divided by “Robot Active Time”",
+        "instruction": "Calculates the Units Per Hour (UPH) for the robot by dividing the Robot Units Put by the Robot Active Time."
     },
     {
-        "name": "Active Robot PPH (excluding blocked on packer)",
-        "definition": "Successful robot picks divided by robot active time, excluding any time the robot was idle due to unavailable compartments."
+        "input": "Active Robot PPH (excluding blocked on packer)",
+        "output": "Successful robot picks divided by robot active time, excluding any time the robot was idle due to unavailable compartments.",
+        "instruction": "Calculates the Picks Per Hour (PPH) for the active robot by dividing the successful robot picks by the robot active time, excluding any idle time due to unavailable compartments."
     },
     {
-        "name": "Robot + Tote Swapping UPH",
-        "definition": "“Robot Units Put” / (“Robot Active Time” + “Tote Swapping Time”)"
+        "input": "Robot + Tote Swapping UPH",
+        "output": "“Robot Units Put” / (“Robot Active Time” + “Tote Swapping Time”)",
+        "instruction": "Calculates the Units Per Hour (UPH) for the robot, taking into account both the Robot Units Put and the duration of both Robot Active Time and Tote Swapping Time."
     },
     {
-        "name": "Batch Present UPH",
-        "definition": "“Total Units Put” / (“Elapsed Clock Time” - “Waiting for Batch Time”)"
+        "input": "Batch Present UPH",
+        "output": "“Total Units Put” / (“Elapsed Clock Time” - “Waiting for Batch Time”)",
+        "instruction": "Calculates the Units Per Hour (UPH) for the batches present by dividing the Total Units Put by the elapsed clock time minus the Waiting for Batch Time."
     },
     {
-        "name": "Clock UPH",
-        "definition": "“Total Units Put” / (“Elapsed Clock Time” - “Waiting for Batch Time”)"
+        "input": "Clock UPH",
+        "output": "“Total Units Put” / (“Elapsed Clock Time” - “Waiting for Batch Time”)",
+        "instruction": "Calculates the Units Per Hour (UPH) based on the total units put, the elapsed clock time, and the waiting time for a batch."
     },
     {
-        "name": "Elapsed clock Time PPH (excluding blocked on packer)",
-        "definition": "Total puts divided by elapsed clock time, not including time robot has no compartment available."
+        "input": "Elapsed clock Time PPH (excluding blocked on packer)",
+        "output": "Total puts divided by elapsed clock time, not including time robot has no compartment available.",
+        "instruction": "Calculates the Puts Per Hour (PPH) by dividing the total puts by the elapsed clock time, excluding the time when the robot has no available compartment."
     },
     {
-        "name": "Utilization %",
-        "definition": "“Robot Active Time” / “Elapsed Clock Time”"
+        "input": "Utilization %",
+        "output": "“Robot Active Time” / “Elapsed Clock Time”",
+        "instruction": "Calculates the percentage utilization by dividing the Robot Active Time by the Elapsed Clock Time."
     },
     {
-        "name": "% Cycle Success",
-        "definition": "Percentage of robot cycles that result in success."
+        "input": "% Cycle Success",
+        "output": "Percentage of robot cycles that result in success.",
+        "instruction": "Calculates the percentage of robot cycles that result in success."
     },
     {
-        "name": "# Human Restarts of Robot per Hour",
-        "definition": "Number of times robot state goes from “running” to “fatal”."
+        "input": "# Human Restarts of Robot per Hour",
+        "output": "Number of times robot state goes from “running” to “fatal”.",
+        "instruction": "Counts the number of times the robot state transitions from 'running' to 'fatal' within an hour."
     },
     {
-        "name": "Items Placed in Exception Bin",
-        "definition": "Number of items placed in the exception bin successfully for any reason, including scanning failures and overages."
+        "input": "Items Placed in Exception Bin",
+        "output": "Number of items placed in the exception bin successfully for any reason, including scanning failures and overages.",
+        "instruction": "Counts the number of items successfully placed in the exception bin for any reason, including scanning failures and overages."
     },
     {
-        "name": "Wrong Compartment Errors",
-        "definition": "Count of holds, where bot tender must resolve an ambiguous state. Associated with human intervention time."
+        "input": "Wrong Compartment Errors",
+        "output": "Count of holds, where bot tender must resolve an ambiguous state. Associated with human intervention time.",
+        "instruction": "Counts the number of holds where the bot tender must resolve an ambiguous state, which is associated with human intervention time."
     },
     {
-        "name": "Drops",
-        "definition": "Count of drops that did not result in a wrong compartment error and requires human to pick up item. Includes drops on the way to the exception bin."
+        "input": "Drops",
+        "output": "Count of drops that did not result in a wrong compartment error and requires human to pick up item. Includes drops on the way to the exception bin.",
+        "instruction": "Counts the number of drops that did not result in a wrong compartment error and require a human to pick up the item. This count includes drops that occur on the way to the exception bin."
     },
     {
-        "name": "Estimated Pre-Treats + Kick-outs",
-        "definition": "Ceiling(0, “Human Units Put” - “Items Placed In Exception Bin” - “Drops” - “Wrong Compartment Errors”)"
+        "input": "Estimated Pre-Treats + Kick-outs",
+        "output": "Ceiling(0, “Human Units Put” - “Items Placed In Exception Bin” - “Drops” - “Wrong Compartment Errors”)",
+        "instruction": "Estimates the count of pre-treats and kick-outs based on the calculation: Ceiling(0, Human Units Put - Items Placed In Exception Bin - Drops - Wrong Compartment Errors)."
     },
     {
-        "name": "% Robot Puts (vs. Manual Puts)",
-        "definition": "Robot puts divided by total puts."
+        "input": "% Robot Puts (vs. Manual Puts)",
+        "output": "Robot puts divided by total puts.",
+        "instruction": "Calculates the percentage of robot puts compared to the total puts by dividing the robot puts by the total puts."
     },
     {
-        "name": "Estimated Human Resolution Time",
-        "definition": "Estimated time, in minutes, for the bot tender to complete the tasks around the cell, namely pretreatment, picking up drops, manual scans, hold resolution, and resolving system errors.\n\n4 * ”Total Batches Completed” +\n0.6 * ”Wrong Compartment Errors” +\n1/6 * ”Human Units Put” +\n1 * ”Human Restarts of Robot per Hour”"
-    },
-    {
-        "name": "Time with Active Batch (min)",
-        "definition": "Time (in minutes) with at least one pick-complete batch."
+        "input": "Estimated Human Resolution Time",
+        "output": "Estimated time, in minutes, for the bot tender to complete the tasks around the cell, namely pretreatment, picking up drops, manual scans, hold resolution, and resolving system errors. 4 * “Total Batches Completed” + 0.6 * “Wrong Compartment Errors” + 0.4 * “Drops” + 0.5 * (“Human Units Put” - “Items Placed In Exception Bin”)",
+        "instruction": "Estimates the time, in minutes, for the bot tender to complete various tasks in the cell, including pretreatment, picking up drops, manual scans, hold resolution, and resolving system errors. The estimation is based on the formula: 4 * Total Batches Completed + 0.6 * Wrong Compartment Errors + 0.4 * Drops + 0.5 * (Human Units Put - Items Placed In Exception Bin)."
     }
 ]
