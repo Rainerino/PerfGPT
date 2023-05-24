@@ -11,6 +11,7 @@ from langchain.document_loaders import (
     EverNoteLoader,
     PDFMinerLoader,
     TextLoader,
+    JSONLoader,
     UnstructuredEmailLoader,
     UnstructuredEPubLoader,
     UnstructuredHTMLLoader,
@@ -77,6 +78,7 @@ LOADER_MAPPING = {
     ".ppt": (UnstructuredPowerPointLoader, {}),
     ".pptx": (UnstructuredPowerPointLoader, {}),
     ".txt": (TextLoader, {"encoding": "utf8"}),
+    ".json": (JSONLoader, {"jq_schema": ".[]"})
     # Add more mappings for other file extensions and loaders as needed
 }
 
