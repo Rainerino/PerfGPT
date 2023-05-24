@@ -1,0 +1,182 @@
+﻿[
+    {
+        "instruction": "hour_utc",
+        "output": "Hour interval timestamp in UTC timezone",
+        "input": ""
+    },
+    {
+        "instruction": "station",
+        "output": "Station name",
+        "input": ""
+    },
+    {
+        "instruction": "robot_pph",
+        "output": "Robot Pick Per Hour",
+        "input": ""
+    },
+    {
+        "instruction": "estimated_robot_pph",
+        "output": "Estimated robot pick per hour",
+        "input": ""
+    },
+    {
+        "instruction": "Place Drops %",
+        "output": "Dropped items percentage out of all the picks during this hour",
+        "input": ""
+    },
+    {
+        "instruction": "Place Holds %",
+        "output": "Percentage of cycles where wrong compartment caused a hold on the compartment cycle count, out of all the picks during this hour",
+        "input": ""
+    },
+    {
+        "instruction": "Scan Fail %",
+        "output": "Percentage of cycles where scanning failed and we couldn't get a barcode from the current pick",
+        "input": ""
+    },
+    {
+        "instruction": "Perturb %",
+        "output": "Percentage of cycles where we perturb the tote to reset its scene",
+        "input": ""
+    },
+    {
+        "instruction": "Robot Active Time",
+        "output": "The amount of time (as a percentage of an hour) that the robot is active for pick and place",
+        "input": ""
+    },
+    {
+        "instruction": "Success_t",
+        "output": "Average cycle time in seconds for all successful cycles",
+        "input": ""
+    },
+    {
+        "instruction": "Total Idle_t",
+        "output": "Robot's total idle time as a percentage of the total time in an hour",
+        "input": ""
+    },
+    {
+        "instruction": "Retract / Scan Drops %",
+        "output": "Percentage of cycles resulting in a drop during retracting or scanning",
+        "input": ""
+    },
+    {
+        "instruction": "No Order %",
+        "output": "Percentage of cycles where the current item's barcode is not found in any batches",
+        "input": ""
+    },
+    {
+        "instruction": "No Compartment %",
+        "output": "Percentage of cycles where there is no available compartment to place the item",
+        "input": ""
+    },
+    {
+        "instruction": "Grasp Fail %",
+        "output": "Percentage of cycles where grasp failed",
+        "input": ""
+    },
+    {
+        "instruction": "Double Pick %",
+        "output": "Percentage of cycles where the robot picked up multiple items at the same time",
+        "input": ""
+    },
+    {
+        "instruction": "Success %",
+        "output": "Percentage of cycles where the placement is successful",
+        "input": ""
+    },
+    {
+        "instruction": "Category Top",
+        "output": "The most frequent category",
+        "input": ""
+    },
+    {
+        "instruction": "Category 2nd",
+        "output": "The second most frequent category",
+        "input": ""
+    },
+    {
+        "instruction": "Category 3rd",
+        "output": "The third most frequent category",
+        "input": ""
+    },
+    {
+        "instruction": "Cup 0 Succ Rate",
+        "output": "Success rate of Suction Cup 0",
+        "input": ""
+    },
+    {
+        "instruction": "Cup 1 Succ Rate",
+        "output": "Success rate of Suction Cup 1",
+        "input": ""
+    },
+    {
+        "instruction": "Cup 2 Succ Rate",
+        "output": "Success rate of Suction Cup 2",
+        "input": ""
+    },
+    {
+        "instruction": "Cup 3 Succ Rate",
+        "output": "Success rate of Suction Cup 3",
+        "input": ""
+    },
+    {
+        "instruction": "Cup 4 Succ Rate",
+        "output": "Success rate of Suction Cup 4",
+        "input": ""
+    },
+    {
+        "instruction": "Cup 5 Succ Rate",
+        "output": "Success rate of Suction Cup 5",
+        "input": ""
+    },
+    {
+        "instruction": "201 Top Scanner",
+        "output": "Performance of 201 top Scanner",
+        "input": ""
+    },
+    {
+        "instruction": "202 Side 1",
+        "output": "Performance of 202 Side 1 Scanner",
+        "input": ""
+    },
+    {
+        "instruction": "203 Side 2",
+        "output": "Performance of 203 Side Top 2 Scanner",
+        "input": ""
+    },
+    {
+        "instruction": "204 Side 3",
+        "output": "Performance of 204 Side 3 Scanner",
+        "input": ""
+    },
+    {
+        "instruction": "205 Side 4",
+        "output": "Performance of 205 Side Top 4 Scanner",
+        "input": ""
+    },
+    {
+        "instruction": "206 Side Top 5",
+        "output": "Performance of 206 Side Top 5 Scanner",
+        "input": ""
+    },
+    {
+        "instruction": "207 Side Top 6",
+        "output": "Performance of 207 Side Top 6 Scanner",
+        "input": ""
+    },
+    {
+        "instruction": "208 Bottom 7",
+        "output": "Performance of 208 Bottom 7 Scanner",
+        "input": ""
+    },
+    {
+        "instruction": "209 Post Pick 8",
+        "output": "Performance of 209 Post Pick 8 Scanner",
+        "input": ""
+    },
+    {
+        "instruction": "210 Post Pick 9",
+        "output": "Performance of 210 Post Pick 9 Scanner",
+        "input": ""
+    }
+]

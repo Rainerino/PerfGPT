@@ -78,7 +78,7 @@ LOADER_MAPPING = {
     ".ppt": (UnstructuredPowerPointLoader, {}),
     ".pptx": (UnstructuredPowerPointLoader, {}),
     ".txt": (TextLoader, {"encoding": "utf8"}),
-    ".json": (JSONLoader, {"jq_schema": ".[]"})
+    ".json": (JSONLoader, {"jq_schema": ".[].instruction"})
     # Add more mappings for other file extensions and loaders as needed
 }
 

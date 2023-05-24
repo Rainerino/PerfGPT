@@ -1,0 +1,102 @@
+[
+    {
+        "instruction": "What triggers the start of a pick-and-place robot cycle?",
+        "input": "",
+        "output": "The start of a pick-and-place robot cycle is triggered by capturing images from the waterbear cameras."
+    },
+    {
+        "instruction": "How many cameras are normally used for image capture?",
+        "input": "",
+        "output": "Normally, 5 out of the 6 cameras are used for image capture, as the depth model supports up to 5 cameras."
+    },
+    {
+        "instruction": "When does the next capture start in the pipeline?",
+        "input": "",
+        "output": "The next capture starts in the pipeline when the previous cycle has a successful placement motion and passes through a 'capture' waypoint."
+    },
+    {
+        "instruction": "What tasks are performed in parallel after the capture is done?",
+        "input": "",
+        "output": "After the capture is done, pre-pick top scanning and perception & planning computation are started in parallel."
+    },
+    {
+        "instruction": "What does perception include?",
+        "input": "",
+        "output": "Perception includes segmentation, depth, attributes, 3D bounding box, and grasp point predictions."
+    },
+    {
+        "instruction": "What is involved in the planning process?",
+        "input": "",
+        "output": "The planning process involves planning the picking motion."
+    },
+    {
+        "instruction": "What happens if planning fails?",
+        "input": "",
+        "output": "If planning fails, the robot resets to a home position where it's not occluding the cameras and retries planning a few times before taking other possible actions."
+    },
+    {
+        "instruction": "What is the purpose of the seeking motion after picking?",
+        "input": "",
+        "output": "The seeking motion after picking is performed to improve the chance of forming a seal given imperfect depth measurements and deformable object contacts."
+    },
+    {
+        "instruction": "What happens if a seal is not formed during the seeking motion?",
+        "input": "",
+        "output": "If a seal is not formed during the seeking motion, the suction is turned off, and the robot resets to the home position to retry."
+    },
+    {
+        "instruction": "What actions are taken if an object is dropped during the retract motion?",
+        "input": "",
+        "output": "If an object is dropped during the retract motion, the robot resets to the home position and retries."
+    },
+    {
+        "instruction": "What actions are taken after the retract motion?",
+        "input": "",
+        "output": "After the retract motion, captures are triggered from side cameras, and double pick detection is run in parallel to post-pick side scanning."
+    },
+    {
+        "instruction": "What actions are taken if scanning fails or a double pick is detected?",
+        "input": "",
+        "output": "If scanning fails or a double pick is detected, the robot either 'active abandons' the object or moves it to an exception tote/compartment, based on cross-cycle decision."
+    },
+    {
+        "instruction": "What is the purpose of the item dimension validation logic?",
+        "input": "",
+        "output": "The item dimension validation logic is used to validate the dimensions of the scanned barcode."
+    },
+    {
+        "instruction": "What happens if the item dimension validation check fails?",
+        "input": "",
+        "output": "If the item dimension validation check fails, the robot either 'active abandons' the object or moves it to an exception tote, based on cross-cycle decision."
+    },
+    {
+        "instruction": "What happens if an object is dropped after scanning?",
+        "input": "",
+        "output": "If an object is dropped after scanning, the robot resets to the home position and retries."
+    },
+    {
+        "instruction": "How is the placement compartment determined?",
+        "input": "",
+        "output": "The placement compartment is determined using the scanned barcode. If the item belongs to an order, the appropriate compartment is selected; otherwise, it is moved to the exception tote."
+    },
+    {
+        "instruction": "What happens if there are no available compartments for placement?",
+        "input": "",
+        "output": "If there are no available compartments for placement, the robot either 'active abandons' the object or freezes (with suction on) until a new compartment becomes available, based on cross-cycle decision."
+    },
+    {
+        "instruction": "What actions are taken if the robot should give up during the placement motion?",
+        "input": "",
+        "output": "If the result indicates that the robot should give up during the placement motion (e.g., too few cups are sealed), it 'active abandons' and retries."
+    },
+    {
+        "instruction": "What happens after dropping the object into the desired compartment?",
+        "input": "",
+        "output": "After dropping the object into the desired compartment, the robot resets and continues with the next cycle."
+    },
+    {
+        "instruction": "What are the light curtain readings and suction readings used for during placing and resetting motion?",
+        "input": "",
+        "output": "The light curtain readings and suction readings are monitored to detect if the robot has dropped the object or if it might have gone into a wrong compartment."
+    }
+]
