@@ -1,0 +1,182 @@
+[
+  {
+    "instruction": "hour_utc",
+    "output": "Hour interval timestamp in UTC timezone",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "station",
+    "output": "Station name",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "robot_pph",
+    "output": "Robot Pick Per Hour",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "estimated_robot_pph",
+    "output": "Estimated robot pick per hour",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Place Drops %",
+    "output": "Dropped items percentage out of all the picks during this hour",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Place Holds %",
+    "output": "Percentage of cycles where wrong compartment caused a hold on the compartment cycle count, out of all the picks during this hour",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Scan Fail %",
+    "output": "Percentage of cycles where scanning failed and we couldn't get a barcode from the current pick",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Perturb %",
+    "output": "Percentage of cycles where we perturb the tote to reset its scene",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Robot Active Time",
+    "output": "The amount of time (as a percentage of an hour) that the robot is active for pick and place",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Success_t",
+    "output": "Average cycle time in seconds for all successful cycles",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Total Idle_t",
+    "output": "Robot's total idle time as a percentage of the total time in an hour",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Retract / Scan Drops %",
+    "output": "Percentage of cycles resulting in a drop during retracting or scanning",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "No Order %",
+    "output": "Percentage of cycles where the current item's barcode is not found in any batches",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "No Compartment %",
+    "output": "Percentage of cycles where there is no available compartment to place the item",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Grasp Fail %",
+    "output": "Percentage of cycles where grasp failed",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Double Pick %",
+    "output": "Percentage of cycles where the robot picked up multiple items at the same time",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Success %",
+    "output": "Percentage of cycles where the placement is successful",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Category Top",
+    "output": "The most frequent category",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Category 2nd",
+    "output": "The second most frequent category",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Category 3rd",
+    "output": "The third most frequent category",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Cup 0 Succ Rate",
+    "output": "Success rate of Suction Cup 0",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Cup 1 Succ Rate",
+    "output": "Success rate of Suction Cup 1",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Cup 2 Succ Rate",
+    "output": "Success rate of Suction Cup 2",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Cup 3 Succ Rate",
+    "output": "Success rate of Suction Cup 3",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Cup 4 Succ Rate",
+    "output": "Success rate of Suction Cup 4",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "Cup 5 Succ Rate",
+    "output": "Success rate of Suction Cup 5",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "201 Top Scanner",
+    "output": "Performance of 201 top Scanner",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "202 Side 1",
+    "output": "Performance of 202 Side 1 Scanner",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "203 Side 2",
+    "output": "Performance of 203 Side Top 2 Scanner",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "204 Side 3",
+    "output": "Performance of 204 Side 3 Scanner",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "205 Side 4",
+    "output": "Performance of 205 Side Top 4 Scanner",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "206 Side Top 5",
+    "output": "Performance of 206 Side Top 5 Scanner",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "207 Side Top 6",
+    "output": "Performance of 207 Side Top 6 Scanner",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "208 Bottom 7",
+    "output": "Performance of 208 Bottom 7 Scanner",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "209 Post Pick 8",
+    "output": "Performance of 209 Post Pick 8 Scanner",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  },
+  {
+    "instruction": "210 Post Pick 9",
+    "output": "Performance of 210 Post Pick 9 Scanner",
+    "input": "hour_utc,station,robot_pph,estimated_robot_pph,place drops%,place holds%,scan_fail%,perturb%,robot_active_time,success_t,total_idle_t,retract / scan drops %,no_order%,no_compartment%,grasp_fail%,double_pick%,success%,category_top,category_2nd,category_3rd,cup_0_succ_rate,cup_1_succ_rate,cup_2_succ_rate,cup_3_succ_rate,cup_4_succ_rate,cup_5_succ_rate,201 Top Scanner,202 Side 1,203 Side Top 2,204 Side 3,209 Post Pick 8,210 Post Pick 9,205 Side 4,206 Side Top 5,207 Side Top 6,208 Bottom 7"
+  }
+]
